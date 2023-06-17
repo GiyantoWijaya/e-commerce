@@ -29,9 +29,12 @@ googleProvider.setCustomParameters({
   prompt: "select_account",
 });
 
+//Authentication Method from Firebase
 export const auth = getAuth();
+// Sign In With Google Pop Up Method
 export const signInWithGooglePopUp = () =>
   signInWithPopup(auth, googleProvider);
+// Sign In With Google Redirect Method
 export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
