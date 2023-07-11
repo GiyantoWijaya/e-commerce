@@ -11,7 +11,7 @@ import SignInForm from "../../components/sign-in-form/sign-in-form.component";
 //   signInWithGooglePopUp,
 // } from "../../utils/firebase/firebase.utils";
 
-import "./authentication.styles.scss";
+import { AuthenticationContainer } from "./authentication.styles";
 
 const Authentication = () => {
   //  Sign In With Google Redirect
@@ -27,13 +27,13 @@ const Authentication = () => {
   // }, []);
 
   return (
-    <div className="authentication-container">
+    <AuthenticationContainer>
       {/* <button onClick={signInWithGoogleRedirect}>
         Sign In with Google Redirect
       </button> */}
       <SignInForm />
       <SignUpForm />
-    </div>
+    </AuthenticationContainer>
   );
 };
 
